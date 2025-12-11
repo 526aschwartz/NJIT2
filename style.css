@@ -119,3 +119,67 @@ body {
 }
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
+/* --- MAKE ALL POSTERS SAME SIZE --- */
+.poster {
+    width: 250px;
+    height: 375px;
+    object-fit: cover;
+    border: 2px dashed black;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- SCORE CIRCLE FIX (MATCHES YOUR HTML CLASS) --- */
+.score-circle {
+    background-color: #39D1B4;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* --- LIKE / DISLIKE BUTTON STYLE --- */
+.btn-like,
+.btn-dislike {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    border: none;
+    margin: 5px;
+    transition: 300ms ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+/* --- HOVER EFFECTS --- */
+.btn-like:hover {
+    background-color: #39D1B4;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn-dislike:hover {
+    background-color: #e05353;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* --- SOCIAL BUTTON ALIGNMENT FIX --- */
+.social {
+    text-align: center;
+    margin-top: 10px;
+}
